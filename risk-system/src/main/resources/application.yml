@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    # 数据库连接地址 (对应我们刚才建的 investment_risk_db)
+    url: jdbc:mysql://localhost:3306/investment_risk_db?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    # 数据库账号（如果你用的是 PhpStudy，默认一般是 root）
+    username: root
+    # 数据库密码（请改成你本地真实的数据库密码，比如 root 或 123456）
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+server:
+  # 后端服务启动的端口号
+  port: 8080

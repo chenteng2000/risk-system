@@ -1,0 +1,13 @@
+/* 强制全屏显示 */
+body, html, #app {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
+
+/* 清除默认边距，防止布局偏移 */
+* {
+  box-sizing: border-box;
+}
