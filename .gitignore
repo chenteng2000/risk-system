@@ -1,0 +1,19 @@
+# --- 后端 (Spring Boot) 过滤规则 ---
+**/target/
+**/.idea/
+**/*.iml
+**/HELP.md
+**/mvnw
+**/mvnw.cmd
+**/.mvn/
+
+# --- 前端 (Vue/Node.js) 过滤规则 ---
+**/node_modules/
+**/dist/
+**/local
+**/.vscode/
+
+# --- 操作系统临时文件 ---
+.DS_Store
+Thumbs.db
+*.log

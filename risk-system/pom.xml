@@ -36,7 +36,7 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
 
-        <!-- 1. 核心 Web 依赖 (这才是我们真正需要的，你之前手滑选错了) -->
+        <!-- 1. 核心 Web 依赖 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>

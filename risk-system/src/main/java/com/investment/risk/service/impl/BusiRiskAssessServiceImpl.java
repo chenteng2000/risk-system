@@ -48,4 +48,17 @@ public class BusiRiskAssessServiceImpl extends ServiceImpl<BusiRiskAssessMapper,
         // 直接调用我们刚才在 Mapper 里写的超强定制 SQL
         return this.baseMapper.getRadarDataByProjectId(projectId);
     }
+
+    @Override
+    public java.util.List<com.investment.risk.entity.vo.RiskRankingVO> getTopRanking() {
+        // 这里可以直接用 baseMapper，它会自动识别为 BusiRiskAssessMapper
+        return baseMapper.getTopRiskProjects();
+    }
+
+    @Override
+    public java.util.List<com.investment.risk.entity.vo.RiskLevelVO> getRiskDistribution() {
+        // 这里的 baseMapper 会被自动识别为 BusiRiskAssessMapper 类型
+        // 从而能正确找到 getRiskLevelDistribution() 方法
+        return baseMapper.getRiskLevelDistribution();
+    }
 }
